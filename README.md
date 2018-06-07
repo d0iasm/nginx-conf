@@ -1,5 +1,7 @@
 # Raspberry Pi projects
-
+```
+$ lsb_release -a
+```
 
 ## Operation commands
 
@@ -32,6 +34,7 @@ An HTTP and reverse proxy server.
 Start the server with:
 ```
 $ sudo /etc/init.d/nginx start
+$ sudo service nginx start
 ```
 
 Stop the server with:
@@ -53,4 +56,5 @@ $ systemctl restart nagios3.service
 ```
 
 
-
+### Refs
+- https://olivertappin.com/command-line-tools/installing-nagios-nginx-php-fpm-nagiosgraph-ubuntu-16-04/
