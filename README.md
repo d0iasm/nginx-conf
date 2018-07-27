@@ -1,4 +1,5 @@
 # Raspberry Pi projects
+Raspbian is based on Debian OS.
 ```
 $ lsb_release -a
 ```
@@ -19,6 +20,8 @@ $ ssh pi@raspberrypi.local
 
 $ groups <user name>
 $ cat /etc/passwd
+
+$ nginx -t
 ```
 
 
@@ -55,6 +58,15 @@ A monitor of networks and infrastructure.
 $ systemctl restart nagios3.service
 ```
 
+
+### Docker
+Install https://docs.docker.com/install/linux/docker-ce/debian/#install-using-the-repository
+
+
+### Required
+- Nginx
+- Nagios
+- Docker
 
 ### Refs
 - https://olivertappin.com/command-line-tools/installing-nagios-nginx-php-fpm-nagiosgraph-ubuntu-16-04/
