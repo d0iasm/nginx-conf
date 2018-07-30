@@ -4,6 +4,36 @@ Raspbian is based on Debian OS.
 $ lsb_release -a
 ```
 
+## Preparing OS
+
+1. Create the removable disk has OS files
+```
+Manage disk parricions
+$ sudo fdisk /dev/<removable disk name>
+
+Copy OS files to removable disk
+$ dd if=<OS file name>.img of=/dev/<removable disk name>
+```
+
+2. Enable SSH
+Create empty ssh file at root direction of boot.
+
+3. Setting Wi-Fi
+```
+$ cat usr/src/kernel/Documentation/networking/mac80211_hwsim/wpa_supplicant.conf 
+
+ctrl_interface=/var/run/wpa_supplicant
+
+network={
+	ssid="mac80211 test"
+	psk="12345678"
+	key_mgmt=WPA-PSK
+	proto=WPA2
+	pairwise=CCMP
+	group=CCMP
+}
+```
+
 ## Operation commands
 
 ```
