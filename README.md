@@ -60,7 +60,8 @@ $ systemctl restart nagios3.service
 
 
 ### Docker
-Install https://docs.docker.com/install/linux/docker-ce/debian/#install-using-the-repository
+Install in Raspberry pi
+https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/
 
 
 ### Required
