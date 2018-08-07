@@ -54,6 +54,9 @@ $ cat /etc/passwd
 $ nginx -t
 ```
 
+## Network
+Used DDNS (Dynamic DNS).
+
 
 ## Tools
 
